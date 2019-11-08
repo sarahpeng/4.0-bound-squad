@@ -15,3 +15,4 @@ The data-driven questions we hope to answer about this domain are:
 * Where are children located for high and low child murder rates?
 * What gender of children tend to die most?
 
+**Finding Data**
