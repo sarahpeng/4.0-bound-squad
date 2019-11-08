@@ -3,9 +3,15 @@
 **Domain of Interest**
 
 Children are a large portion of our world population. Our interest and field of domain is focused on Human Children. Within this domain, there are a variety of measurements that leaves us open space to do research. 
+
 Examples of data driven project we found related to this domain are:
 * The birth rates and fertility datasets that surround children.
 * The names used for children.
 * The amount spent on children within an age range.
 * Top diseases children have.
+
+The data-driven questions we hope to answer about this domain are:
+* What diseases do children have in relation to their income?
+* Where are children located for high and low child murder rates?
+* What gender of children tend to die most?
 
