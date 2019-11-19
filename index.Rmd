@@ -15,16 +15,20 @@ source("summary_info.R")
 
 ## Introductory paragraph
 Our interest and domain is the topic of Human Children. We Chose this topic because there are a lot of measurements in this domain which leaves us lots of open space to do research such as age, death, development, education, gender, health, etc.
-The dataset used for chart 1-2 was of foster care admittance records which helped us track the flow of children in and out of foster care. Chart 3 was generated using a dataset of deaths of children in each state from ages less than 1 to 21 years old. The main focus was to find a correlation between foster care admittance and child deaths.
+The dataset used for chart 1-2 was of foster care admittance records which helped us track the flow of children in and out of foster care. Chart 3 was generated using a dataset of deaths of children in each state from ages less than 1 to 21 years old. The main focus was to find a correlation between foster care admittance and child deaths. 
 
 Write a summary paragraph that includes information calculated by your summary information function
 
 ## Summary paragraph
-We wrote a function that takes in a dataset and returns a list of info about it. We did this and found the highest children fatalities number national wide. It also helped us find the total number of national figures in four years. Overall the data showed a low mean by comparison to the massive outliers some states had.
+We wrote a function that takes in a dataset and returns a list of info about it. We did this and found the highest children fatalities number national wide. It also helped us find the total number of national figures in four years. Overall the data showed a low mean by comparison to the massive outliers some states had. Texas has the most deaths and michigan has the least during the years of 2013 to 2015.
 
 
 ## Table
+This represents the top seven states that had the highest number of fatalaties from 2013-2015. They are added as a sum of the 3 years. 
 
+Some notable info: 
+The highest number of national children fatalaties is 1699
+The total number of national children fatalaties from 2013-2017 is 8190
 ```{r table, echo = FALSE}
               kable(summary_table(dataset))
 ```
