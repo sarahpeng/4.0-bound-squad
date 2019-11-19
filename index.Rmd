@@ -1,0 +1,49 @@
+---
+title: "Index"
+author: "4.0 bound squad"
+date: "11/18/2019"
+output: html_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("plot1.R")
+source("plot2.R")
+source("plot3.R")
+source("aggregate_table.R")
+source("summary_info.R")
+```
+
+## Introductory paragraph
+Our interest and domain is the topic of Human Children. We Chose this topic because there are a lot of measurements in this domain which leaves us lots of open space to do research such as age, death, development, education, gender, health, etc.
+The dataset used for chart 1-2 was of foster care admittance records which helped us track the flow of children in and out of foster care. Chart 3 was generated using a dataset of deaths of children in each state from ages less than 1 to 21 years old. The main focus was to find a correlation between foster care admittance and child deaths.
+
+Write a summary paragraph that includes information calculated by your summary information function
+
+## Summary paragraph
+We wrote a function that takes in a dataset and returns a list of info about it. We did this and found the highest children fatalities number national wide. It also helped us find the total number of national figures in four years. Overall the data showed a low mean by comparison to the massive outliers some states had.
+
+
+## Table
+
+```{r table, echo = FALSE}
+              kable(summary_table(dataset))
+```
+
+## Chart1
+The purpose is to find how many kids are being admitted into foster care. This will help find the measure of kids going into foster care allowing us to possibly draw conclusions on a reltionship between admittance in and deaths of children. Very important to note the negative trend.
+```{r p, echo = FALSE}
+plot_years_vs_admissions(children)
+```
+
+## Chart2
+The purpose is to find how many cps reports are being filed by year. This helps us draw a relationship between cps reports and foster care admits to see if foster care aids in children harming incidents that are reports in cps reports rise and lower at similar rates. Very important to note the negative trend here as well.
+```{r q, echo = FALSE}
+plot_year_admissions_CPS(children)
+```
+
+## Chart3
+The purpose of this plot is to show amount of child deaths per state. This helps us draw a reltionship between deaths and cps reports. Georgia and Indiana stick out as extreme fatalaty rate states for children.
+
+```{r w, echo = FALSE}
+histogram_plot
+```
