@@ -16,6 +16,7 @@ get_summary_info <- function(dataset) {
     filter(value != "National") %>%
     filter(value == max(value)) %>% 
     pull(value)
+  
   ret$total_national_fatalities_in_4_years <- dataset %>%
     filter(State == "National") %>%
     gather(National) %>% 
@@ -24,6 +25,7 @@ get_summary_info <- function(dataset) {
     mutate(numeric_val = as.numeric(paste0(substr(value,0,1),substr(value,3,5)))) %>% 
     select(numeric_val) %>% 
     sum()
+  
   return (ret)
 } 
 
