@@ -1,6 +1,7 @@
 library(dplyr)
 children_fatalities <- read.csv(file = "./data/children_fatalities.csv",
-                    stringsAsFactors = FALSE)
+                    stringsAsFactors = FALSE,
+                    fileEncoding = "UTF-8-BOM")
 
 summary_table <-  function(dataset) {
                     

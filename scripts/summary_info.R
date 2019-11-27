@@ -1,7 +1,8 @@
 library(dplyr)
 library(tidyr)
 children_fatalities <- read.csv(file = "./data/children_fatalities.csv",
-                                stringsAsFactors = FALSE)
+                                stringsAsFactors = FALSE,
+                                fileEncoding = "UTF-8-BOM")
 
 # The highest children fatalities number national wide
 # The total number of national figures in four years 
