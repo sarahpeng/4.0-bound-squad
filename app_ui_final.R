@@ -1,6 +1,7 @@
-page_one <- tabPanel(
+page_one <- tabPanel( 
   "Introduction",
-  h1(strong("Overview")),
+  h1(strong("Overview")),img(src='kids.jpeg', align = "right"), 
+  tags$head(tags$style('body {color:purple;}')),
   h4("Our project’s goal is to analyze children fatalities and victims through the foster system,
     specifically in the state of New York. We will be working with the Child Victim and Fatalities 
     data in the U.S. obtained through the healthdata website which publishes a large amount of 
