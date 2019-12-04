@@ -6,6 +6,7 @@ library(ggplot2)
 library(knitr)
 library(htmltools)
 library(tidyverse)
+library(shinythemes)
 
 
 

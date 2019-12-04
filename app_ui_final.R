@@ -1,6 +1,6 @@
 page_one <- tabPanel( 
   "Introduction",
-  h1(strong("Overview")),img(src='kids.jpeg', align = "right"), 
+  h1(strong("Overview")),img(src='kids.jpeg', align = "right"),
   tags$head(tags$style('body {color:purple;}')),
   h4("Our project’s goal is to analyze children fatalities and victims through the foster system,
     specifically in the state of New York. We will be working with the Child Victim and Fatalities 
@@ -14,7 +14,7 @@ page_one <- tabPanel(
   light the link between children in foster care and the number of child fatalities annually. 
   This data may help people thinking about putting their unborn children in foster care or 
   at least understand the possible consequences associated with foster care."
-  ),
+  ), 
 )
 data <- read.csv("data/children_fatalities.csv", stringsAsFactors = FALSE)
 # import data
@@ -168,9 +168,12 @@ t2017 <- total %>%
     h5("The Children’s Foster Care tab can be utilized to view the amount of kids put into foster care,
     annually, and comparing this number with the total amount of reports filed with the
     Children’s Protective Services. This gives insight to the correlation between for CPS 
-    reports and the total amount of children in foster care, who are the most vulnerable to such acts.")
+    reports and the total amount of children in foster care, who are the most vulnerable to such acts."
+       )
   )
     my_ui <- navbarPage(
+      theme = shinytheme("sandstone"),
+      
       "Children Mortaliity Rates in Foster Care System", 
       page_one,         
       page_two,
