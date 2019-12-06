@@ -1,0 +1,13 @@
+name: finalproject
+title: finalproject
+username:
+account: speng21
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1568823
+bundleId: 2645399
+url: https://speng21.shinyapps.io/finalproject/
+when: 1575595606.54176
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .Rapp.history|index.html|index.Rmd|README.md|finaldata/.DS_Store|scripts

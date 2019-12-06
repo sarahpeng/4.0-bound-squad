@@ -16,7 +16,7 @@ page_one <- tabPanel(
   at least understand the possible consequences associated with foster care."
   ), 
 )
-data <- read.csv("data/children_fatalities.csv", stringsAsFactors = FALSE)
+data <- read.csv("finaldata/child-fatalities.csv", stringsAsFactors = FALSE)
 # import data
 child_fatalities <- read.csv("finaldata/child-fatalities.csv",
                              stringsAsFactors = FALSE)
@@ -128,7 +128,7 @@ t2017 <- total %>%
       )
     )
     
-    children <- read.csv("data/children.csv", stringsAsFactors = FALSE)
+    children <- read.csv("finaldata/children.csv", stringsAsFactors = FALSE)
     
     children_1 <- children %>% 
       group_by(County) %>% 
