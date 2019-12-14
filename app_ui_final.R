@@ -71,7 +71,7 @@ t2017 <- total %>%
          X2017_Victims, X2017_Fatalities)
   
     page_four <- tabPanel(
-      "Page four",
+      "Children Fatalities",
       titlePanel("Total Child Fatalities in a chosen year"),
       sidebarLayout( 
       sidebarPanel(
@@ -91,7 +91,7 @@ t2017 <- total %>%
       )
     )
     page_three <- tabPanel(
-      "Page three",
+      "2017 Stats",
       titlePanel("Total Children Victims and Fatalities in 2017"),
       
       sidebarLayout(
@@ -111,7 +111,7 @@ t2017 <- total %>%
     )
     
     page_two <- tabPanel(
-      "Page two",
+      "2013 Stats",
       titlePanel("Total Children Victims and Fatalities in 2013"),
       sidebarLayout(
         sidebarPanel(
@@ -135,7 +135,7 @@ t2017 <- total %>%
       mutate(CPS = Indicated.CPS.Reports, Admissions = Admissions, Year = Year, Discharges = Discharges) %>% 
       select(County, Year, CPS, Admissions, Discharges) 
     
-    page_five <- tabPanel("Page five",
+    page_five <- tabPanel("Foster Care",
                        titlePanel("Admitted children into Foster Care vs. Indicated CPS Reports in NY"),
                        sidebarLayout(
                          sidebarPanel(
@@ -154,19 +154,19 @@ t2017 <- total %>%
     "Conclusion",
     h1(strong("Summary")),
     h3(strong("Children Fatalities and Victims")),
-    h5("The second and third page tab shows the 2013 and 2017 Children Victims or Fatalities. This allows user to 
+    h5("The 2013 Stats and 2017 Stats tab shows the 2013 and 2017 Children Victims or Fatalities. This allows user to 
         input a either Victims or Fatalities to see the number of victims and fatalities total in each state 
         from 2013 or 2017. The user can check the number of victims vs. fatalities 
         in either year 2013 or 2017 between states and observe the difference."),
     h3(strong("Children Deaths by state each year")),
-    h5("The page four tab shows the Total Children Fatalities by State in a chosen year is used to 
+    h5("The Children Fatalities tab shows the Total Children Fatalities by State in a chosen year is used to 
        look at individual years from the dataset and view each state’s percentage of overall child deaths 
        in the total dataset.This helps the viewer not only analyze the trend of growth or shrinkage as years  
        increase but also visualizes top states where this issue is most impactful, in this case being 
        Texas every year in a positive growing trend."),
     h3(strong("Children Admitted to Foster Care vs. Child Protective Services by County")),
     h5("The Admitted children into Foster Care vs. Indicated CPS Reports in NY tab, is located
-    on page five, and can be utilized to view the amount of kids put into foster care,
+    on Foster Care tab, and can be utilized to view the amount of kids put into foster care,
     annually, and comparing this number with the total amount of reports filed with the
     Children’s Protective Services. This gives insight to the correlation between for CPS 
     reports and the total amount of children in foster care, who are the most vulnerable to such acts."
